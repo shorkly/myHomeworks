@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>чипирование</title>
+</head>
+
+<body>
+    <h1>Заполнение анкеты</h1>
+    <form id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new
+        FormData(document.getElementById('my_form')))).toString()));return false;">
+        <fieldset>
+            <legend>
+                Первый шаг
+            </legend>
+            <label for="name">як пана звати</label>
+            <br>
+            <input type="text" name="registration_login" id="name">
+            <br>
+            <label for="email">только не мейл.ру</label>
+            <br>
+            <input type="email" name="registration_email" id="email">
+            <br>
+            <label for="password">придумай пароль который ты завтра забудешь</label>
+            <br>
+            <input type="password" name="registration_password" id="password">
+            <br>
+            <label for="passwordconfirm">а теперь докажи</label>
+            <br>
+            <input type="password" name="passwordconfirm" id="passwordconfirm">
+        </fieldset>
+        <fieldset>
+            <legend>
+                Второй шаг
+            </legend>
+            <label for="position">хто я...</label>
+            <br>
+            <select name="who" id="position">
+                <option value="president">президент України</option>
+                <option value="lawyer">успішний адвокат</option>
+                <option value="wife">звичайна домогосподарка</option>
+                <option value="student">студент-філософ з Могилянки</option>
+                <option value="agronom">агроном з Черкащини</option>
+                <option hidden disabled selected>Хто я?</option>
+            </select>
+            <fieldset>
+                <legend>
+                    Дед ты или нет
+                </legend> <br>
+                <input type="radio" name="years" id="yo1" value="&gt;18" checked>
+                <label for="yo1" id="first">меньше 18</label>
+                <br>
+                <input type="radio" name="years" id="yo2" value="&lt;18">
+                <label for="yo2" id="second">дэд</label>
+                <br>
+                <input type="radio" name="years" id="yo3" value="other">
+                <label for="yo3" id="third">предпочитаю скрыть</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Третий шаг</legend>
+            <br>
+            <label for="date">день когда ты прошел этот опрос</label>
+            <br>
+            <br>
+            <input type="date" name="date" id="date">
+            <br>
+            <br>
+            <textarea name="text">аня зая</textarea>
+            <br>
+            <label>
+                <input type="checkbox">
+                соглашаюсь с бла бла</label>
+            <br>
+            <br>
+            <input type="submit" value="отправить"> <input type="reset" value="начни заново"> <input type="button"
+                value="можешь понажимать меня">
+
+        </fieldset>
+        <footer>Обратная связь:<nav><a href="tel:+380930035049">+380930035049</a></nav>
+        </footer>
+    </form>
+</body>
+
+</html>
