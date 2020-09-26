@@ -1,0 +1,13 @@
+container {
+margin: 0 auto;
+width: 90%;
+max-width: 1200px;
+}
+h1 {
+    color:#000;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(250, 215, 244);
+    text-align: center;
+}
