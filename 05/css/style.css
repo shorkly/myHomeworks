@@ -5,7 +5,7 @@
 }
 body {
     background-color: #121116;
-    font-size: 15px;
+    font-size: 17px;
     color: #fefbfc;
     text-align: center;
 }
@@ -20,7 +20,7 @@ h2 {
     margin: auto;
 }
 p {
-    margin-top: 62px;
+    margin-top: 81px;
     color: #fefbfc;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -44,5 +44,21 @@ p {
 background-position: 0 0;
 background-image: url(../sprite.png);
 width: 230px;
-height: 38px;
+height: 15px;
+}
+a {
+    padding: 0 15px;
+}
+#google {
+    margin: -6px;
+    padding-left: 11px;
+    padding-right: 17px;
+}
+#dribble {
+    margin: 1px;
+    padding-left: 9px;
+}
+#tweter {
+    padding-right: 25px;
+    padding-top: 25px;
 }
