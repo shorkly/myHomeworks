@@ -34,9 +34,9 @@ p {
 }
 .icon_1 {
     background-image: url(../logo.png);
-    background-position: 10px 0;
+    background-position: 67px 0;
     margin-top: 120px;
-    width: 252px;
+    width: 250px;
     height: 40px;
 }
 .icon_2 {
@@ -47,18 +47,13 @@ width: 230px;
 height: 15px;
 }
 a {
-    padding: 15px;
+    padding: 0 15px;
 }
-#google {
-    margin: -6px;
-    padding-left: 11px;
-    padding-right: 17px;
+.img {
+    height: 17px;
+    width: 1171px;
+    margin: 0px;
 }
-#dribble {
-    margin: 1px;
-    padding-left: 9px;
-}
-#tweter {
-    padding-right: 25px;
-    padding-top: 25px;
+ul li {
+    display: inline;
 }
