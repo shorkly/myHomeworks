@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping list</title>
     <link rel="stylesheet" href="css/style1.css">
-    <link rel='shortcut icon' href="https://flukeout.github.io/favicon.png">
+    <link rel="shortcut icon" href="https://flukeout.github.io/favicon.png">
 </head>
 
 <body>
@@ -18,40 +18,44 @@
         <main class="container-1">
             <div class="item">
                 <ul>
-                    <label>
-                        <li>
-                            <input type="checkbox" class='check' name="pickle"> A lot of pickles <p>for next lesson
-                                about CSS</p>
-                        </li>
-                    </label>
-                    <label>
-                        <li>
-                            <input type="checkbox" class='check' name="appple"> 10 apples <p>for more CSS manipulations
-                            </p>
+                    <li>
+                        <label for="pickle">
+                            <input type="checkbox" id="pickle">
+                            <span> A lot of pickles<small> for next lesson about CSS</small></span>
 
-                        </li>
-                    </label>
-                    <label>
-                        <li><input type="checkbox" class='check' name="orange"> 20 oranges <p>because they are
-                                awesome</p>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="apple">
+                            <input type="checkbox" id="apple">
+                            <span>10 apples <small>for more CSS manipulations</small></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="orange">
+                            <input type="checkbox" id="orange">
+                            <span>20 oranges <small>because they are awesome</small></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="plate">
+                            <input type="checkbox" id="plate">
+                            <span>13 plates <small>hm... hhey always disappear</small></span>
 
-                        </li>
-                    </label>
-                    <label>
-                        <li><input type="checkbox" class='check' name="plate">
-                            13 plates <p>hm... hhey always disappear</p>
-                        </li>
-                    </label>
-                    <label>
-                        <li><input type="checkbox" class='check' name="bento"> 15 bentos
-                        </li>
-                    </label>
-                    <label>
-                        <li>
-                            <input type="checkbox" class='check' name="sake">
-                            1 bottle of Sake ^_^ <p>for my friends</p>
-                        </li>
-                        </lable>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="bento">
+                            <input type="checkbox" id="bento">
+                            <span>15 bentos</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="sake">
+                            <input type="checkbox" id="sake">
+                            <span> 1 bottle of Sake ^_^ <small>for my friends</small></span>
+                        </label>
+                    </li>
                 </ul>
             </div>
         </main>

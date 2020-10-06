@@ -13,7 +13,7 @@ header {
     height: 100%;
 }
 main + div {
-    width: 100px;
+    width: 100px
 }
 li {
     font-size: 20px;
@@ -36,25 +36,21 @@ li:hover {
 li:active {
     background-color: #eb7e7f;
 }
-li:checked {
-   text-decoration: line-through;
-   color: #a3a0b5;
-}
 ul {
     margin-left: 22%;
 width: 730px;
 height: 510px;
 }
-p:not(#footer) {
+small {
     display: inline;
     color: #bdbdc9;
     font-size: 15px;
 }
-p:not(#footer)::after {
+small::after {
     content: ')';
     color: #bdbdc9;
 }
-p:not(#footer)::before {
+small::before {
 content: '(';
 color: #bdbdc9;
 }
@@ -66,4 +62,8 @@ footer {
     text-align: center;
     font-size: 25px;
     color: #eb7e7f;
+}
+li>label>input:checked+span {
+    text-decoration: line-through;
+    color: #a3a0b5;
 }
