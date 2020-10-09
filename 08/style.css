@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fdde7e;
+    margin: 0 auto; /*центрирование*/
+    width: 1200px;/*ширина родителя*/
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+}
+.bronze, .silver {
+    height: 441px;
+    margin-top: 53px;
+}
+.gold {
+    height: 500px;
+    margin-top: 49px;
+}
+.cup {
+    width: 360px;
+    background-color: #fff;
+    margin-left: 29px;/*внешние отступы элементов*/
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .4);
+}
+
+.price1 {
+    margin-top: 35px;
+}
+.price {
+    margin-top: 21px;
+    letter-spacing: -1px;
+}
+h2 {
+    color: #000;
+    font-size: 52px;
+    font-weight: 700; 
+    letter-spacing: -5px;
+}
+h2:not(.hg) {
+    margin-top: 15px;
+}
+.dol {
+    letter-spacing: -5px;
+    font-size: 60px;
+    color: #02995b;
+    font-weight: 1000;
+   margin-top: 33px;
+}
+.dol1 {
+    margin-top: 43px;
+}
+p {
+    letter-spacing: 1px;
+    margin-top: 17px;
+    font-size: 20px;
+    color: #000;
+}
+
+.pg {
+    margin-top: 16px;
+}
+.item:not(.item1) {
+    margin-top: 12px;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
+.icon {
+    width: 137px;
+    height: 137px;
+    background-image: url(./cups.png);
+    background-repeat: no-repeat;
+}
+.icon_2 {
+    background-position: -319px 0;
+}
+.icon_1 {
+    background-position: -170px 0;
+    margin-top: 33px;
+}
+.icon_3 {
+    background-position: 0 0;
+}
