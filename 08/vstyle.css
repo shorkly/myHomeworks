@@ -27,15 +27,27 @@ body {
     margin-bottom: 20px;
     width: 360px;
     position: relative;
+    transition: all .2s ease;
+}
+.item:hover {
+    transform: scale(1.1);
+    transition: all .2s ease;
+    z-index: 1;
 }
 
 .item1 {
     width: 66%;
     position: relative;
     text-align: left;
+    transition: all .2s ease;
 }
-
+.item1:hover {
+    transform: scale(1.1);
+    transition: all .2s ease;
+    z-index: 1;
+}
 h2 {
+    width: 310px;
     margin: 0 27px;
     text-transform: uppercase;
     font-size: 22px;
@@ -71,6 +83,7 @@ h2 {
     position: absolute;
     margin-left: 29px;
     bottom: 25px;
+    
 }
 
 .loading {
@@ -79,4 +92,45 @@ h2 {
     font-size: 13px;
     color: #99a5b0;
     padding-bottom: 102px;
+}
+.gif {
+    margin: 5px;
+}
+.shadow {
+    position: relative;
+}
+
+.shadow::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: "";
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,0.6))); /* safari4+,chrome */
+background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* ie10+ */
+background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* w3c */
+}
+
+.shadow::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: "";
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,0.6))); /* safari4+,chrome */
+background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* ie10+ */
+background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); /* w3c */
+}
+.img {
+    vertical-align: top;
 }
