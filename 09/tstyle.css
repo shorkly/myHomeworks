@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #464f54;
+    position: relative;
+}
+.label {
+    position: absolute;
+    width: 876px;
+    right: 0;
+    height: 187px;
+    background-color: #181818;
+    top: 47px;
+    box-shadow: 0 0 59px 0 rgba(0, 0, 0, 0.5)
+}
+.wrap{
+    position: relative;
+    right: 0;
+}
+label {
+    color: #777;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50px;
+    left: 64px;
+}
+input {
+    background-color: #181818;
+    color: #fefefe;
+    font-size: 48px;
+    text-transform: capitalize;
+    margin: 77px 0 0 65px;
+    border: 3px solid transparent;
+    width:calc(100% - 65px);
+    outline: 0;
+}
+.label:after {
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid #303030;
+    left: 65px;
+    width:90%;
+    padding-left: 15px;
+}
+.list {
+    position: absolute;
+    width: 812px;
+    background-color: #fbc02d;
+    height: 76px;
+    right: 0;
+    top: 234px;
+    box-shadow: 0 0 39px 0 rgba(0, 0, 0, 0.22);
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:calc(100% - 200px);
+}
+
+li {
+    right: calc(100% - 202px);
+    padding: 22px 0 0 42px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding-top: 22px;
+    font-size: 25px;
+}
+
+i {
+    color: #fff;
+    opacity: .5;
+}
+
+i:hover {
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+}
+.section2 {
+    min-height: 751px;
+    max-height: max-content;
+    background-color: #fff;
+    position: absolute;
+    right:calc(50% - 534px);
+    top: 149px;
+    z-index: -1;
+    padding: 202px 132px 0 124px;
+    box-shadow: 0 0 39px 0 rgba(0, 0, 0, 0.22);
+    width: 1060px;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 77.93px;
+    color: #2a2a2a;
+    font-family: 'Futura PT';
+}
+
+.w {
+    font-size: 30px;
+    color: #8f8f8f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 55px;
+}
+p {
+margin-bottom: 40px;
+}
+p:not(.w) {
+    font-size: 26.92px;
+    line-height: 40.38px;
+}
+
+.roy {
+    color: #b4b4b4;
+    font-size: 19.84px;
+    margin-bottom: 49px;
+}
+
+label,
+.roy {
+    font-family: 'Proxima Nova Rg';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
