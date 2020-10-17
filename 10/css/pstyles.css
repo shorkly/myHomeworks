@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f6f6f6;
+    color: #3c3c3c;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.main {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 110px;
+    flex-direction: column;
+}
+h1 {
+    font-size: 34px;
+    text-transform: uppercase;
+}
+h1:before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: calc(50% - 23px);
+    top: 160px;
+    width: 45px;
+    height: 4px;
+    background-color: #dddbdb;
+}
+p {
+    line-height: 24px;
+    padding-top: 64px;
+    font-size: 16px;
+    width: 570px;
+    text-align: center;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.items {
+    width: 269px;
+    height: 268px;
+    position: relative;
+    perspective: 1000px;
+}
+.items:hover .photo {
+    transform: rotateY(180deg);
+}
+.items:hover .content {
+    transform: rotateY(360deg);
+}
+.content {
+    background-color: #18b5dc;
+    transform: rotateY(180deg);
+    width: 134px;
+}
+.soc {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+.soc li{
+    color: #ffffff;
+    opacity: 1;
+    background-color: #18b5dc;
+    font-size: 22px;
+    height: 42px;
+    width: 42px;
+    margin: 10px;
+}
+.soc li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 42px;
+    background-color: rgba(255, 255, 255, .3) ;
+    color: white;
+    text-decoration: none;
+}
+.soc li a:hover {
+    background-color: white;
+    color: #18b5dc;
+    transition: all .2s ease;
+}
+.photo, .content {
+    position: absolute;
+    width: 269px;
+    height: 268px;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+}
+.text {
+    font-family: 'Lato', sans-serif;
+}
+.name {
+    font-size: 18px;
+    color: #282528;
+    padding-top: 280px;
+    font-weight: 600;
+}
+.position {
+    font-size: 14px;
+    color: #646464;
+}
