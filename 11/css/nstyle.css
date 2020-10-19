@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    color: #e1e1e1;
+background: #c5c5c8 url(../img/nike-bg.jpg) center center no-repeat;
+background-size: cover;
+}
+.container {
+    margin: 0 auto;
+}
+.content {
+    position: absolute;
+    top:calc(50% - 206px);
+    left:calc(50% - 337px);
+    height: 391px;
+    width: 686px;
+    background-color: #111a28;
+    border-radius: 9px;
+}
+.main {
+    position: relative;
+}
+img {
+position: absolute;
+top: 126px;
+left: 36px;
+}
+.dots {
+    position: absolute;
+    left: 178px;
+    top: 357px;
+}
+.dots input {
+    display: none;
+}
+.dots label {
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 8px;
+}
+#hw1 {
+    background-color: #1f273f;
+}
+#hw2 {
+    background-color: #ffffff;
+}
+#hw3 {
+    background-color: #ed3333;
+}
+#hw4 {
+    background-color: #29e3ea;
+}
+#button1:checked ~ #hw1,
+#button2:checked ~ #hw2,
+#button3:checked ~ #hw3,
+#button4:checked ~ #hw4 {
+    box-shadow:  0 0 0 2px #7e838b;
+    outline: 0 none;
+}
+span {
+    position: absolute;
+    background-image: url(../img/nike-logo.png);
+height: 33px;
+width: 65px;
+top: 24px;
+left: 21px;
+}
+.text {
+    position: absolute;
+    top: 79px;
+    right: 33px;
+}
+h2 {
+    width: 150px;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 100;
+}
+.shoe {
+    font-size: 14px;
+    line-height: 26px;
+
+}
+.stars {
+    position: absolute;
+    right: 158px;
+    overflow: hidden;
+    width: 265px;
+}
+.stars:not(:checked) > input {
+    display: none;
+}
+.stars:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: #9da1a6;
+}
+.stars:not(:checked) > label:before {
+    content: '★';
+}
+.stars > input:checked ~ label {
+    color: #f7bf16;
+}
+.select {
+    position: relative;
+    top: 215px;
+    left: 413px;
+}
+select {
+    height: 32px;
+    width: 69px;
+    outline: 0 none;
+    background-color: #111a28;
+    color: #e1e1e1;
+    border: 1px solid #4f5560;
+}
+#size {
+    position: absolute;
+}
+#qty {
+    position: absolute;
+    left: 71px;
+}
+button {
+    position: absolute;
+    height: 40px;
+    width: 184px;
+    top: 61px;
+    border: 1px solid #fff;
+    background-color: #4c525a;
+    opacity: .26;
+    color: #e1e1e1;
+    outline: 0 none;
+    transition: all .2s ease;
+}
+button:hover {
+    border: 1px solid #fff;
+    background-color: #e1e1e1;
+    color: #4c525a;
+    transition: all .2s ease;
+}
+button:active {
+    border: 1px solid #fff;
+    background-color: #4c525a;
+    color: #e1e1e1;
+}
