@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="tabs">
+                <ul class="tabs_caption">
+                    <li class="active"><a href="#">Sign in</a></li>
+                    <li><a href="#">Join us</a></li>
+                </ul>
+                <div class="tabs_content active">
+                    <div class="main-content">
+                        <div class="form_row">
+                            <div class="form_col w_01">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" required>
+                            </div>
+
+                            <div class="form_col w2">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" required>
+                            </div>
+                            
+                            <div class="form_keep">
+                                <input type="checkbox" id="keep">
+                                <label class="keep_in" for="keep">Keep me signed in</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Sign in</button>
+                        </div>
+                        <div class="form_create">
+                            <a href="#">Forgot password</a>
+                            <a href="#">Create an account</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tabs_content">
+                    <div class="main-content">
+                        <div class="form_row">
+                            <div class="form_col w_01">
+                                <label for="user">Username</label>
+                                <input type="text" name="username" id="user" required>
+                            </div>
+
+                            <div class="form_col w2">
+                                <label for="password_01">Password</label>
+                                <input type="password" name="password" id="password_01" required>
+                            </div>
+
+                            <div class="form_col w2">
+                                <label for="password_02">Repeat Password</label>
+                                <input type="password" name="password" id="password_02" required>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Join in</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

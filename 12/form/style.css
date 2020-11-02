@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #e5eeee;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.wrap {
+    background: url(img/bg.png) no-repeat;
+    margin: 52px 200px;
+}
+
+.tabs {
+    width: 262px;
+    margin: 0 auto;
+    padding: 53px 0 55px 0;
+    text-decoration: none;
+}
+
+.tabs_caption {
+    padding-bottom: 51px;
+    display: flex;
+    width: 148px;
+    justify-content: space-between;
+}
+
+.tabs_content {
+    display: none;
+}
+
+.tabs_content.active {
+    display: block;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    color: #fbf6e4;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: #fbf6e4;
+    padding-bottom: 4px;
+}
+
+li a:focus {
+    border-bottom: 2px solid red;
+    width: 60px;
+}
+
+.form_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form_col label {
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 11px;
+}
+
+.w_01 {
+    margin-bottom: 18px;
+}
+
+.w2 {
+    margin-bottom: 19px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 42px;
+    outline: none;
+    padding: 0 10px;
+    background: none;
+    border: 2px solid #a389c9;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    border-color: #23ae92;
+}
+
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+
+.form_keep {
+    margin-bottom: 41px;
+    display: flex;
+    align-items: center;
+}
+
+.keep_in {
+    margin-left: 7px;
+    color: #fbf6e4;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn {
+    margin-bottom: 33px;
+}
+
+button {
+    outline: 0 none;
+    width: 100%;
+    height: 42px;
+    background-color: #23ae92;
+    color: #fbf6e4;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background-color: #fbf6e4;
+    color: #23ae92;
+    border: 2px solid #23ae92;
+    transition: all .3s ease;
+}
+
+button:focus {
+    background-color: #23ae92;
+    color: #fbf6e4;
+}
+
+.form_create {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_create a {
+    font-size: 13px;
+    color: #9994c3;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #7f78be;
+}

@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: url(../img/bg.png) top center no-repeat;
+    color:#262626;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+h2 {
+    padding-bottom: 34px;
+}
+p {
+    padding-bottom: 32px;
+}
+.text5 {
+    padding-top: 146px;
+    width: 570px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+input {
+   width: 570px;
+   height: 55px;
+   padding-left: 14px;
+   outline: transparent;
+   border-radius: 0;
+}
+input:focus::placeholder {
+color: transparent;
+}
+button {
+    width: 170px;
+    height: 55px;
+    background-color: #96b92c;
+    color: #ffffff;
+    outline: 0 none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+}
+ button:hover {
+    background-color: white;
+    color:#96b92c;
+    transition: all .2s ease;
+}
+ button:active {
+    background-color:#96b92c;
+    color: #ffffff;
+    transition: all .2s ease;
+}
+.email {
+    display: flex;
+justify-content: space-between;
+width: 770px;
+height: 55px;
+}
