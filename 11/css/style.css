@@ -54,7 +54,7 @@ ul li a {
     color: #262626;
 }
 
-ul li a:focus:not(.lg) {
+ul li a:hover:not(.lg) {
     border-top: 3px solid #ff6033;
     padding-top: 9px;
 }
