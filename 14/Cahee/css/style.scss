@@ -376,6 +376,11 @@ header {
                 margin-bottom: 20px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
 
+                &:hover {
+                    transform: scale(1.03);
+                    transition: all .2s ease;
+                }
+
                 a {
                     display: flex;
                     justify-content: center;
@@ -497,7 +502,7 @@ header {
 
 
 .section-5 {
-    background: url(../img/bg4.png) bottom left no-repeat;
+    background: #fff url(../img/bg4.png) bottom left no-repeat;
     color: #262626;
     padding-bottom: 163px;
 
@@ -780,6 +785,11 @@ header {
 
     .list {
         width: 500px;
+
+        a {
+            text-decoration: none;
+            color: #262626;
+        }
     }
 
     #area {
@@ -869,16 +879,7 @@ button:not(.hamburger) {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .container {
-        width: 1140px;
-    }
-}
-
 @media screen and (max-width: 1199px) {
-    .container {
-        width: 925px;
-    }
 
     body {
         background-position: center top;
@@ -908,22 +909,36 @@ button:not(.hamburger) {
     }
 
     .section-5 {
-        background-position: center right;
+        background-position: -265px 0;
     }
 
 }
 
-@media screen and (max-width: 991px) {
-    .container {
-        width: 720px;
+@media screen and (max-width: 830px) {
+
+    .section-5 .email {
+        width: 100%;
+    }
+
+    .section-5 #input-0 {
+        width: 570px;
+        height: 55px;
+        padding-left: 14px;
+        outline: transparent;
+        border-radius: 0;
+    }
+
+    .section-5 .text5 p {
+        width: 355px;
+    }
+
+    .section-6 .form {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        width: 685px;
-    }
-
     header .hamburger {
         display: block;
     }
@@ -982,21 +997,6 @@ button:not(.hamburger) {
         padding-bottom: 85px;
     }
 
-    .section-5 .email {
-        width: 100%;
-    }
-
-    .section-5 #input-0 {
-        width: 570px;
-        height: 55px;
-        padding-left: 14px;
-        outline: transparent;
-        border-radius: 0;
-    }
-
-    .section-5 .text5 p {
-        width: 355px;
-    }
 
 
     .section-7 .main p {
@@ -1010,11 +1010,6 @@ button:not(.hamburger) {
 
     .section-7 .btn button {
         margin: 30px 0 80px;
-    }
-
-    .section-6 .form {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
     }
 
     .section-6 {
@@ -1057,7 +1052,6 @@ button:not(.hamburger) {
 
 @media screen and (max-width: 575px) {
     .container {
-        width: 100%;
         padding: 0 15px;
     }
 
@@ -1244,7 +1238,7 @@ button:not(.hamburger) {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 365px) {
     .section-3 .work_zone .bg3 {
         background: url(../img/tomato-4.png) right top no-repeat;
     }
