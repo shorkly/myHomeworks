@@ -1,0 +1,20 @@
+body{
+    background: #efefef;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.task9{
+    width: 50%;
+}
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 50px;
+}
