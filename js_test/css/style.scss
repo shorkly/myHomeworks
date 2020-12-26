@@ -1444,6 +1444,9 @@ header {
         font-family: 'GothamBook';
         font-size: 14px;
     }
+    .sec4 .news_slider .content4 {
+        padding-right: 20px;
+    }
 }
 
 @media screen and (max-width:663px) {
@@ -1575,17 +1578,18 @@ header {
         padding-right: 0;
     }
     .sec4 .news_slider .content4 {
-        padding-right: 116px;
         h3 {
             padding-bottom: 32px;
             font-size: 18px;
             line-height: 30px;
             font-family: 'Open Sans';
             color: #2c4058;
+            text-transform: uppercase;
         }
     }
     .sec4 .news_slider {
         overflow: auto;
+        width: auto;
     }
     .sec4 #autoplay .news_slider .img_content img {
         width: 100%;
