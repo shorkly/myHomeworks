@@ -1457,6 +1457,10 @@ header nav .soc ul li a:active {
   .sec4 .news_slider .content4 {
     padding-right: 20px;
   }
+
+  .news_slider .content4 .news_text {
+    padding-bottom: 20px;
+  }
 }
 @media screen and (max-width: 663px) {
   .container {
