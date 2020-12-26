@@ -917,6 +917,8 @@ header nav .soc ul li a:active {
 .sec6 #map > img {
   width: 100%;
   height: 700px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .sec6 #map_link {
   display: -webkit-box;
