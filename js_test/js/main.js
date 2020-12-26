@@ -30,7 +30,6 @@ $(document).ready(function() {
 //2nd slider
 $(document).ready(function() {
     let autoplaySlider = $('#autoplay').lightSlider({
-
         enableTouch: true,
         auto: true,
         loop: true,
@@ -192,4 +191,3 @@ $(document).ready(function() {
         }
     });
 });
-//ограничение по символам

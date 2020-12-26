@@ -75,7 +75,11 @@ ul li a:hover {
   font-size: 25px;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 30px;
+  margin: 30px 20px 0;
+}
+#mobile_menu ul li ul.soc-list {
+  display: flex;
+  flex-direction: row;
 }
 #mobile_menu ul li a {
   text-decoration: none;
@@ -480,9 +484,6 @@ header nav .soc ul li a:active {
 .sec4 .news_slider .content4 .author img {
   padding-right: 19px;
   padding-bottom: 30px;
-}
-.sec4 .news_slider .content4 .author a img {
-  width: 100%;
 }
 .sec4 .news_slider .content4 .author .text {
   display: flex;
@@ -1095,6 +1096,15 @@ header nav .soc ul li a:active {
     height: 666px;
   }
 
+  .sec1,
+.sec1 li {
+    height: 580px;
+  }
+
+  .sec1 h2 {
+    padding-top: 260px;
+  }
+
   /* .sec6 .map>img {
       display: none;
   }
@@ -1117,7 +1127,7 @@ header nav .soc ul li a:active {
   }
 
   .sec1 .p {
-    font-family: GothamBook;
+    font-family: "GothamBook";
     font-size: 14px;
   }
 }
@@ -1204,6 +1214,11 @@ header nav .soc ul li a:active {
     font-size: 35px;
   }
 }
+@media screen and (max-width: 453px) {
+  header .nav .logo a img {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 437px) {
   .sec1 .p {
     font-size: 10px;
@@ -1245,9 +1260,21 @@ header nav .soc ul li a:active {
   .sec4 .news_slider .content4 {
     padding-right: 116px;
   }
+  .sec4 .news_slider .content4 h3 {
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Open Sans";
+    color: #2c4058;
+  }
 
   .sec4 .news_slider {
     overflow: auto;
+  }
+
+  .sec4 #autoplay .news_slider .img_content img {
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 408px) {
