@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        #trafficLights {
+            display: block;
+            height: 200px;
+            width: 80px;
+            border-radius: 25px;
+            background-color: #efefee;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .light {
+            display: block;
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 185, 0.5);
+            border-radius: 25px;
+            margin-top: 70px;
+            margin-left: 14px;
+            position: absolute;
+        }
+        
+        .light:after {
+            content: "";
+            display: block;
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 126, 126, 0.5);
+            border-radius: 25px;
+            margin-top: -60px;
+            position: absolute;
+        }
+        
+        .light:before {
+            content: "";
+            display: block;
+            height: 50px;
+            width: 50px;
+            background-color: rgba(159, 255, 159, 0.5);
+            border-radius: 25px;
+            margin-top: 60px;
+            position: absolute;
+        }
+        
+        .red {
+            display: block;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+        
+        .yellow {
+            display: block;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            border-radius: 50%;
+            margin-top: 70px;
+            margin-left: 15px;
+        }
+        
+        .green {
+            display: block;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: lime;
+            border-radius: 50%;
+            margin-top: 130px;
+            margin-left: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="trafficLights">
+            <div class="light"></div>
+        </div>
+        <button id="btn" class="btn btn-info">Switch</button>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        let traffic = document.getElementById("trafficLights");
+
+        let color = [`red`, `yellow`, `green`];
+        let div = document.createElement('div');
+
+        let i = 0;
+
+        btn.onclick = function() {
+            div.classList.remove(color[i - 1]);
+            div.classList.add(color[i]);
+            i++;
+
+            if (i == 4) {
+                i = 0;
+            }
+
+        }
+        traffic.append(div);
+    </script>
+</body>
+
+</html>

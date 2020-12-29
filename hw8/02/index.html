@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #div{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            position: relative;
+            left: 40.5%;
+            top: 200px;
+            background-color: #efefef;
+        }
+        .content{
+            font-size: 27px;
+            position: absolute;
+            top: 40.5%;
+            left: 14.5%;
+        }
+        #close{
+            position: absolute;
+            bottom: 20%;
+            left: 33.5%;
+        }
+        #open{
+            position: absolute;
+            left: 47.5%;
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+        <button class="btn btn-dark" id="open">Открыть</button>
+        <div id="div">
+            <div class="content">
+                Модальное окно
+            </div>
+            <button class="btn btn-danger" id="close">Закрыть</button>
+        </div>
+
+    <script>
+            let div = document.getElementById('div');
+            let close = document.getElementById('close');
+            let open = document.getElementById('open');
+            open.onclick = function () {
+                div.style.display = 'block';
+                open.style.display = 'none';
+            };
+            close.onclick = function () {
+                div.style.display = 'none'
+                open.style.display = 'block';
+
+            }
+    </script>
+</body>
+
+</html>
