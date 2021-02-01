@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "ProximaBold";
+    src: url("ProximaNova-Bold.woff2") format("woff2"), url("ProximaNova-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Proxima Semibold";
+    src: url("ProximaNova-Semibold.woff2") format("woff2"), url("ProximaNova-Semibold.woff") format("woff");
+}
