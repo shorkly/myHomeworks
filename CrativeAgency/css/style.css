@@ -1,0 +1,502 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  outline: 0 none;
+}
+
+body {
+  color: #60606e;
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/home-bg.jpg") no-repeat center;
+  background-size: cover;
+  cursor: default;
+}
+
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* .cross {
+    font-size: 50px;
+} */
+img {
+  object-fit: cover;
+}
+
+.hamburger_menu {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: inline-block;
+  width: 31px;
+  height: 1px;
+  background-color: #60606e;
+}
+.hamburger:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background-color: #60606e;
+}
+.hamburger:after {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 1px;
+  background-color: #60606e;
+}
+
+#mobile_menu {
+  display: none;
+  z-index: 100;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  position: fixed;
+  background-color: #efefef;
+  transition: all 0.2s ease;
+}
+#mobile_menu.opened {
+  left: 0;
+}
+
+#menu_shadow {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.205);
+  z-index: 100;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+#menu_shadow.opened {
+  display: block;
+  opacity: 1;
+}
+
+p {
+  font-family: "Open Sans";
+}
+
+#header {
+  height: 100px;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+#header .logo {
+  display: inline-block;
+  background: url(../img/akad-logo.png);
+  width: 58px;
+  height: 14px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.sec1 .heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 125px 0;
+}
+.sec1 .home_heading {
+  font-size: 18px;
+  line-height: 48px;
+  font-family: "Montserrart";
+  font-weight: bold;
+  width: 98px;
+  height: 30px;
+  background: #7beec7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.sec1 h1 {
+  font-size: 48px;
+  line-height: 48px;
+  font-family: "Montserrart";
+  font-weight: bold;
+  width: 555px;
+  height: 100px;
+  border: 10px solid #60606e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.sec1 .description {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Open Sans";
+  max-width: 555px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  width: 165px;
+  height: 50px;
+  background: #7beec7;
+  text-transform: uppercase;
+  border: 3px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin-top: 25px;
+}
+.btn a {
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-family: "Montserrart";
+}
+.btn:hover {
+  border: 3px solid #7beec7;
+  background: white;
+  transition: all 0.3s ease;
+}
+.btn:hover a {
+  transition: all 0.3s ease;
+  color: #7beec7;
+}
+.btn:active {
+  background: #7beec7;
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn:active a {
+  transition: all 0.3s ease;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 48px;
+  font-family: "Montserrart";
+  position: relative;
+  margin-bottom: 29px;
+}
+h2::before {
+  content: "";
+  width: 67px;
+  height: 21px;
+  background: #7beec7;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  bottom: 6px;
+}
+
+.sec2 .sec2-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sec2 .btn {
+  float: right;
+}
+.sec2 .sec2-text {
+  width: 555px;
+}
+.sec2 .sec2-text p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+.sec3 {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.sec3 h3 {
+  font-family: "Montserrart";
+  font-size: 14px;
+  line-height: 48px;
+}
+.sec3 .sec3-descr {
+  max-width: 750px;
+  width: 100%;
+}
+.sec3 .sec3-descr p {
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 100px;
+}
+.sec3 .sec3-content-descr {
+  text-align: start;
+  max-width: 570px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sec3 .sec3-content-descr .content {
+  width: 263px;
+  padding-bottom: 60px;
+}
+.sec3 .sec3-content-descr .content ul li {
+  text-transform: uppercase;
+  color: #999;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 30px;
+}
+.sec3 .sec3-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+  /* .gallery-wrap {
+      width: 847px;
+      display: grid;
+  } */
+}
+.sec4 .sec4-descr {
+  max-width: 770px;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.sec4 .categories {
+  width: 180px;
+}
+.sec4 .categories h3 {
+  font-family: "Montserrart";
+  font-size: 30px;
+  line-height: 48px;
+  padding-bottom: 45px;
+}
+.sec4 .categories ul li {
+  float: left;
+}
+.sec4 .categories ul li a {
+  text-transform: uppercase;
+  font-family: "Montserrart";
+  font-size: 14px;
+  line-height: 48px;
+  color: #60606e;
+  transition: all 0.3s ease;
+  padding: 5px 20px;
+}
+.sec4 .categories ul li a:hover {
+  color: white;
+  background: #7beec7;
+}
+.sec4 .categories ul li a.active {
+  color: white;
+  background: #7beec7;
+}
+
+.sec5 {
+  margin-top: 150px;
+  padding-bottom: 50px;
+  background: #7beec7;
+}
+.sec5 .sec5-content {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sec5 .sec5-content .getInTouch {
+  width: 500px;
+}
+.sec5 .sec5-content .getInTouch h3 {
+  color: white;
+  font-family: "Montserrart";
+  font-size: 30px;
+  line-height: 48px;
+}
+.sec5 .sec5-content .btn {
+  background: white;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+.sec5 .sec5-content .btn a {
+  color: #7beec7;
+  transition: all 0.3s ease;
+}
+.sec5 .sec5-content .btn:hover {
+  transition: all 0.3s ease;
+  background: #7beec7;
+  border: 3px solid white;
+}
+.sec5 .sec5-content .btn:hover a {
+  color: white;
+  transition: all 0.3s ease;
+}
+.sec5 .sec5-content .btn:active {
+  background: white;
+  transition: all 0.3s ease;
+}
+.sec5 .sec5-content .btn:active a {
+  transition: all 0.3s ease;
+  color: #7beec7;
+}
+.sec5 .sec5-content .email {
+  padding: 21px 26px 18px 20px;
+  width: 555px;
+  background: white;
+}
+.sec5 .sec5-content .email h3 {
+  font-family: "Montserrart";
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 18px;
+}
+.sec5 .sec5-content .email p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+.sec5 .sec5-content .email .contact {
+  position: relative;
+}
+.sec5 .sec5-content .email .contact input {
+  width: 510px;
+  height: 50px;
+  border: 1px solid #e5e5e5;
+  padding-left: 19px;
+  font-family: "Montserrart";
+  font-size: 12px;
+  line-height: 48px;
+  color: #60606e;
+}
+.sec5 .sec5-content .email .contact input::placeholder {
+  font-family: "Montserrart";
+  font-size: 12px;
+  line-height: 48px;
+  color: #cdcdcd;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.sec5 .sec5-content .email .contact input:focus::placeholder {
+  color: transparent;
+}
+.sec5 .sec5-content .email .contact input:focus {
+  border: 1px solid #7beec7;
+}
+.sec5 .sec5-content .email .contact button {
+  position: absolute;
+  right: -1px;
+  top: -30px;
+  background: #7beec7;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-family: "Montserrart";
+  transition: all 0.3s ease;
+}
+.sec5 .sec5-content .email .contact button:hover {
+  transition: all 0.3s ease;
+  background: white;
+  color: #7beec7;
+  border: 3px solid #7beec7;
+}
+.sec5 .sec5-content .email .contact button:active {
+  background: #7beec7;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footer {
+  color: #9a9a9a;
+}
+.footer .coopyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+.footer ul li {
+  display: flex;
+  align-items: center;
+  padding-right: 19px;
+}
+.footer ul li a {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 48px;
+  color: #9a9a9a;
+}
+.footer .rights .createdBy {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 48px;
+  font-family: "Open Sans";
+}
+.footer .rights .soc li a {
+  color: #9a9a9a;
+}
+.footer .rights .soc li a svg {
+  width: 20px;
+  height: 25px;
+}

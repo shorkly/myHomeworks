@@ -1,0 +1,1 @@
+*{padding:0;margin:0;box-sizing:border-box}body,html{width:100%;height:100%}ol,ul{list-style:none}a{text-decoration:none}.container{max-width:1140px;width:100%;margin:0 auto}.hamburger,.hamburger:after,.hamburger:before{display:inline-block;width:31px;height:1px;background-color:#60606e}.hamburger:after,.hamburger:before{content:"";width:15px}.hamburger:after{width:23px}
